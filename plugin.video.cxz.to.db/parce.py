@@ -5,7 +5,7 @@
 	cur.execute("CREATE TABLE directors (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(50), url VARCHAR(50))")
 	con.commit()
 
-	url = 'http://cxz.to/films/group/director/?all&letter=%s'
+	url = 'http://cxz.to./films/group/director/?all&letter=%s'
 	alf =u'abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщэюя'
 	#alf =u'а'
 
@@ -40,7 +40,7 @@ def readpersons1(params):
 	cur.execute("CREATE TABLE casts (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(50), url VARCHAR(50))")
 	con.commit()
 
-	url = 'http://cxz.to/films/group/cast/?all&letter=%s'
+	url = 'http://cxz.to./films/group/cast/?all&letter=%s'
 	alf =u'абвгдеёжзийклмнопрстуфхцчшщэюяabcdefghijklmnopqrstuvwxyz'
 	#alf ='а'
 
